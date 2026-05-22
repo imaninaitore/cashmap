@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<style>
+
+/*variables*/
+:root{
+    --main-color: rgba(5, 115, 129, 0.539);  
+    --heading-font: Georgia, serif;
+}
+
+/*styling using variables*/
+.theme{
+    background-color: var(--main-color);
+}
+ 
+.hfont{
+    font-family: var(--heading-font);
+}
+
+</style>
+
+<body class="flex justify-center items-center min-h-screen theme bg-gradient-to-r from-slate-900 via-cyan-500 to-slate-900 px-6 py-6 m-4 ">
+
+<div class="bg-cyan-950 w-full max-w-sm p-6 rounded-xl shadow-lg ">
+
+<header class=" p-3 bg-gradient-to-r from-slate-900 via-cyan-500 to-slate-900 rounded-t-xl ">
+<h1 class="theme hfont text-center font-bold text-xl text-cyan-50">Log In</h1>
+</header>
+
+    <div class="form-container bg-slate-900 p-4 rounded-b-xl">
+<form action="/submit-form">
+<div class="p-4">
+<label class="text-white" for="fname">Full Name</label>
+<input class="w-full py-2 px-3 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-cyan-500 active:bg-indigo-100 " type="text" id="fname" name="Full Name" placeholder="Enter your full name" required><br>    
+</div>
+
+<div class="p-4">
+<label class="text-white" for="fname">Email Address</label>
+<input class="w-full py-2 px-3 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-cyan-500 active:bg-indigo-100 " type="email" id="email" name="email" placeholder="@gmail.com" required><br>
+</div>
+
+<div class="p-4">
+<label class="text-white" for="fname">username</label>
+<input class="w-full py-2 px-3 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-cyan-500 active:bg-indigo-100 " type="text" id="name" name="username" placeholder="Enter your username" required><br>
+</div>
+
+<div class="p-4">
+<label class="text-white" for="Password">Password</label>
+<input class="w-full py-2 px-3 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-cyan-500 active:bg-indigo-100 " type="password" id="Password" name="Password" placeholder="Password" required><br>
+</div>
+
+<button class="w-full py-3 px-3 rounded bg-indigo-600 p-4 hover:scale-105 transition-all duration-300 focus:bg-indigo-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500 active:bg-indigo-400 ">
+    LOG IN 
+</button>
+
+</body>
+</html>
