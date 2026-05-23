@@ -7,81 +7,103 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="flex justify-center items-center min-h-screen bg-indigo-100 p-6 ">
- 
-<div class="form-container bg-indigo-200 w-110 p-8 rounded-xl shadow-lg ">
+<style>
 
-<header class=" p-4 bg-indigo-200 ">
-<h1 class="text-center font-bold text-xl text-purple-950">Registration form</h1>
+/*variables*/
+:root{
+    --main-color: rgba(5, 115, 129, 0.539);  
+    --heading-font: Georgia, serif;
+}
+
+/*styling using variables*/
+.theme{
+    background-color: var(--main-color);
+}
+ 
+.hfont{
+    font-family: var(--heading-font);
+}
+
+</style>
+
+<body class="flex justify-center items-center min-h-screen theme bg-gradient-to-r from-slate-900 via-cyan-500 to-slate-900 px-6 py-6 m-4 ">
+ 
+<div class="bg-cyan-950 w-full max-w-sm p-6 rounded-xl shadow-lg ">
+
+<header class=" p-3 bg-gradient-to-r from-slate-900 via-cyan-500 to-slate-900 rounded-t-xl">
+<h1 class="theme hfont text-center font-bold text-xl text-cyan-50">Registration form</h1>
 </header>
 
+<div class="form-container bg-slate-900 p-4 rounded-b-xl">
+
 <form action="/submit-form">
+
 <div class="p-4">
-<label for="fname">Full Name</label><br>
-<input class=" py-2 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-indigo-100 " type="text" id="fname" name="Full Name" placeholder="Enter your full name" required><br>    
+<label class="text-white" for="fname">Full Name</label><br>
+<input class=" w-full py-2 px-3 mb-4 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-cyan-500 active:bg-indigo-100 " type="text" id="fname" name="Full Name" placeholder="Enter your full name" required><br>    
 </div>
 
 <div class="p-4">
-<label for="fname">Email Address</label><br>
-<input class=" py-2 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-indigo-100 " type="email" id="email" name="email" placeholder="@gmail.com" required><br>
+<label class="text-white" for="fname">Email Address</label><br>
+<input class=" w-full py-2 px-3 mb-4 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-cyan-500 active:bg-indigo-100 " type="email" id="email" name="email" placeholder="@gmail.com" required><br>
 </div>
 
 <div class="p-4">
-<label for="fname">username</label><br>
-<input class="py-2 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-indigo-100 " type="text" id="name" name="username" placeholder="Enter your preferred username" required><br>
+<label class="text-white" for="fname">username</label><br>
+<input class="w-full py-2 px-3 mb-4 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-cyan-500 active:bg-indigo-100" type="text" id="name" name="username" placeholder="Enter your preferred username" required><br>
 </div>
 
 <div class="p-4">
-<label for="pic">Profile picture</label><br>
-<input class="py-2 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-indigo-100 " type="file" id="picture" name="picture" placeholder="profile picture" required accept="image/"><br>
+<label class="text-white" for="pic">Profile picture</label><br>
+<input class="w-full py-2 px-3 mb-4 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-cyan-500 active:bg-indigo-100 " type="file" id="picture" name="picture" placeholder="profile picture" required accept="image/"><br>
 </div>
 
 <div class="p-4">
-<label for="Password">Create Password</label><br>
-<input class="py-2 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-indigo-100 " type="password" id="Password" name="Password" placeholder="create Password" required><br>
+<label class="text-white" for="Password">Create Password</label><br>
+<input class="w-full py-2 px-3 mb-4 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-cyan-500 active:bg-indigo-100 " type="password" id="Password" name="Password" placeholder="create Password" required><br>
 </div>
 
 <div class="p-4">
-<label for="cpwd">confirm password</label><br>
-<input class="py-2 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-indigo-100 " type="password" id="cpwd" name="confirm password" placeholder="confirm password" required><br>
+<label class="text-white" for="cpwd">confirm password</label><br>
+<input class="w-full py-2 px-3 mb-4 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-cyan-500 active:bg-indigo-100 " type="password" id="cpwd" name="confirm password" placeholder="confirm password" required><br>
 </div>
 
 <div class="p-4">
-<label for="dob">Date of birth</label><br>
-<input class="py-2 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-indigo-100 " type="date" id="dob" name="Date of birth" placeholder="date of birth" required><br>
+<label class="text-white" for="dob">Date of birth</label><br>
+<input class="w-full py-2 px-3 mb-4 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-cyan-500 active:bg-indigo-100" type="date" id="dob" name="Date of birth" placeholder="date of birth" required><br>
 </div>
 
 <div class="p-4 ">
-<label for="no.">Phone Number</label><br>
-<input class="py-2 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-indigo-100 " type="number" id="no." name="phone number" placeholder="phone number" required><br>
+<label class="text-white" for="no.">Phone Number</label><br>
+<input class="w-full py-2 px-3 mb-4 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-cyan-500 active:bg-indigo-100 " type="number" id="no." name="phone number" placeholder="phone number" required><br>
 </div>
 
- <p>Gender</p>
+ <p class="text-white text-lg ">Gender</p>
     <input type="radio" id="male" name="gender">
-    <label for="male">Male</label>
+    <label class="text-white" for="male">Male</label>
 
     <input type="radio" id="female" name="gender">
-    <label for="female">Female</label>
+    <label class="text-white" for="female">Female</label>
 
     <div class="p-4">
-    <p>How did you hear about us</p>
+    <p class="text-white text-lg">How did you hear about us ?</p>
      <input type="checkbox" id="gaming" name="hobby">
-    <label for="gaming">social media</label>
+    <label class="text-white" for="gaming">social media</label>
 
     <input type="checkbox" id="music" name="hobby">
-    <label for="female">internet research</label>
+    <label class="text-white" for="female">internet research</label>
 
     <input type="checkbox" id="sports" name="hobby">
-    <label for="sports">friends</label>
+    <label class="text-white" for="sports">friends</label>
     </div>
 
-    <button class=" p-3 py-3 rounded bg-purple-400 hover:bg-purple-500 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500  action:bg-purple-300">
-    sign in
+   <button class="w-full py-3 px-3 mb-4 rounded bg-indigo-600 p-4 hover:scale-105 transition-all duration-300 focus:bg-indigo-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500 active:bg-indigo-400 ">
+    SIGN IN 
 </button>
 
 </form>
-    </div>
-    </fieldset>
-    
+</div>
+
+</div>    
 </body>
 </html>
