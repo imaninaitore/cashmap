@@ -78,6 +78,14 @@
 <input class="w-full py-2 px-3 mb-4 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-cyan-500 active:bg-indigo-100 " type="number" id="no." name="phone number" placeholder="phone number" required><br>
 </div>
 
+ <p class="text-white text-lg">What country are you from ?</p>
+    <select name="country" id="nationality">
+        <option class="text-cyan-300 " value="kenya">Kenya</option>
+        <option class="text-cyan-300 text-lg" value="Tanzania">Tanzanina</option>
+        <option class="text-cyan-300  text-lg" value="uganda">Uganda</option>
+
+    </select>
+
  <p class="text-white text-lg ">Gender</p>
     <input type="radio" id="male" name="gender">
     <label class="text-white" for="male">Male</label>
@@ -85,16 +93,24 @@
     <input type="radio" id="female" name="gender">
     <label class="text-white" for="female">Female</label>
 
+    
+ <p class="text-white text-lg ">Preferred account type ? </p>
+    <input type="radio" id="personal" name="account">
+    <label class="text-white" for="personal">Personal</label>
+
+    <input type="radio" id="business" name="account">
+    <label class="text-white" for="business">business</label>
+
     <div class="p-4">
     <p class="text-white text-lg">How did you hear about us ?</p>
-     <input type="checkbox" id="gaming" name="hobby">
+     <input type="checkbox" id="media" name="feedback">
     <label class="text-white" for="gaming">social media</label>
 
-    <input type="checkbox" id="music" name="hobby">
+    <input type="checkbox" id="internet" name="feedback">
     <label class="text-white" for="female">internet research</label>
 
-    <input type="checkbox" id="sports" name="hobby">
-    <label class="text-white" for="sports">friends</label>
+    <input type="checkbox" id="friends" name="feedback">
+    <label class="text-white" for="friends">friends</label>
     </div>
 
    <button class="w-full py-3 px-3 mb-4 rounded bg-indigo-600 p-4 hover:scale-105 transition-all duration-300 focus:bg-indigo-400 focus:outline-2 focus:outline-offset-2 focus:outline-indigo-500 active:bg-indigo-400 ">
