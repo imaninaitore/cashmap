@@ -34,73 +34,76 @@ Welcome John !
     <p class="text-white text-4xl p-4">My dashboard</p>
 
     <!--card grid container-->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!--balance card-->
+<section id="dashboard">   
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!--balance card-->
     <div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6">
 
          <div class="absolute top-4 right-4 bg-cyan-500 p-3 rounded-full">
          <i class="fa-solid fa-wallet text-cyan-300 text-xl"></i>
          </div>
 
-    <p class="text-cyan-300 text-lg">Total Balance</p>
+        <p class="text-cyan-300 text-lg">Total Balance</p>
 
-    <h2 class="text-lime-300 text-3xl font-bold mt-2">
+       <h2 class="text-lime-300 text-3xl font-bold mt-2">
         12,450 Ksh
-    </h2>
+       </h2>
 
-    <div class="mt-4 text-sm text-slate-300 space-y-1">
+       <div class="mt-4 text-sm text-slate-300 space-y-1">
         <p>Available: <span class="text-lime-300">9,870 Ksh</span></p>
         <p>Pending: <span class="text-red-300">580 Ksh</span></p>
         <p>Updated: <span class="text-white">Today</span></p>
+       </div>
     </div>
-</div>
 
-<!--spending card--> 
-<div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6">
+    <!--spending card--> 
+    <div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6">
 
-     <div class="absolute top-4 right-4 bg-red-500/10 p-3 rounded-full">
+      <div class="absolute top-4 right-4 bg-red-500/10 p-3 rounded-full">
         <i class="fa-solid fa-chart-line text-red-300 text-xl"></i>
-    </div>
+      </div>
 
-    <p class="text-cyan-300 text-sm">Monthly Spending</p>
+      <p class="text-cyan-300 text-sm">Monthly Spending</p>
 
-    <h2 class="text-lime-300 text-3xl font-bold mt-2">
+      <h2 class="text-lime-300 text-3xl font-bold mt-2">
         $3,500 Budget
-    </h2>
+      </h2>
 
-    <div class="mt-4 text-sm text-slate-300 space-y-1">
+      <div class="mt-4 text-sm text-slate-300 space-y-1">
         <p>Spent: <span class="text-white">$2,340</span></p>
         <p>Remaining: <span class="text-lime-300">$1,160</span></p>
+      </div>
+
     </div>
 
-</div>
+    <div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6">
 
-<div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6">
-
-    <div class="absolute top-4 right-4 bg-green-500/10 p-3 rounded-full">
+      <div class="absolute top-4 right-4 bg-green-500/10 p-3 rounded-full">
         <i class="fa-solid fa-piggy-bank text-green-300 text-xl"></i>
-    </div>
+      </div>
 
-    <p class="text-cyan-300 text-sm">Savings Progress</p>
+     <p class="text-cyan-300 text-sm">Savings Progress</p>
 
-    <h2 class="text-white text-3xl font-bold mt-2">
+     <h2 class="text-white text-3xl font-bold mt-2">
         72%
-    </h2>
+     </h2>
 
-    <div class="mt-4 text-sm text-slate-300 space-y-1">
+     <div class="mt-4 text-sm text-slate-300 space-y-1">
         <p>Goal: <span class="text-white">$5,000</span></p>
         <p>Saved: <span class="text-lime-300">$3,600</span></p>
         <p>Target: <span class="text-white">Dec 2026</span></p>
-    </div>
+     </div>
 
-    <!-- progress bar -->
-    <div class="w-full bg-slate-700 rounded-full h-2 mt-4">
+     <!-- progress bar -->
+     <div class="w-full bg-slate-700 rounded-full h-2 mt-4">
         <div class="bg-lime-400 h-2 rounded-full" style="width:72%"></div>
+     </div>
+
     </div>
 
 </div>
 
-</div>
+</section> 
 
 <!--sidebar-->
 <aside class="fixed left-0 top-0 w-64 h-screen p-6 bg-gradient-to-b from-slate-900 via-cyan-800 to-slate-900">
@@ -111,15 +114,21 @@ Welcome John !
 <nav>
    <div class="nav-links flex flex-col items-start mt-10 space-y-4">
     <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-105 transition-all duration-300 inline-block" href="#dashboard">Dashboard</a>
-    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-105 transition-all duration-300 inline-block" href="#about">Budget tracking</a>
-    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-105 transition-all duration-300 inline-block" href="#our-plans">savings plan</a>
-    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-105 transition-all duration-300 inline-block" href="#testimonials">expense monitor</a>
-    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-105 transition-all duration-300 inline-block" href="#contact">goal tracking</a>
-    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-105 transition-all duration-300 inline-block" href="#contact">mentorship</a>
+    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-105 transition-all duration-300 inline-block" href="#budget">Budget tracking</a>
+    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-105 transition-all duration-300 inline-block" href="#savings">savings plan</a>
+    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-105 transition-all duration-300 inline-block" href="#expense">expense monitor</a>
+    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-105 transition-all duration-300 inline-block" href="#goal">goal tracking</a>
+    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-105 transition-all duration-300 inline-block" href="#mentorship">mentorship</a>
    </div>
 </nav>
 </aside>
 
+</div>
+
+<section id="budget">
+<div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6">
+
+</section>
 
 </main>
 
