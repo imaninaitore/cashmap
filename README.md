@@ -18,9 +18,9 @@ Additional features such as goal setting , savings plan and mentorship programs 
 
 ## Project Structure
 
-├── cash.html  
-├── login.css  
-├── signin.html 
+├── index.html  
+├── login.html  
+├── signup.html 
 └── README.md  
 └── LICENSE  
 
