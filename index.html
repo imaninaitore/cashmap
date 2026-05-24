@@ -15,14 +15,14 @@
 <div class="nav-bar bg-gradient-to-r from-cyan-700 via-slate-900 to-cyan-700 p-6 rounded ">
 <nav>
     <div class="logo">
-    <p class="text-cyan-200 text text-4xl "><i class="fa-solid fa-coins" style="color: rgb(99, 230, 190);"></i>CashMap</p>
+    <p class="text-cyan-200 text text-5xl "><i class="fa-solid fa-coins" style="color: rgb(99, 230, 190);"></i>CashMap</p>
     </div>
 
    <div class="nav-links flex flex-col md:flex-row items-center justify-center ">
-    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-120 transition-all duration-300 inline-block" href="about">About us</a>
-    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-120 transition-all duration-300 inline-block" href="our-plans">Our Plans</a>
-    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-120 transition-all duration-300 inline-block" href="testimonials">Testimonials</a>
-    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-120 transition-all duration-300 inline-block" href="contact">Contact</a>
+    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-120 transition-all duration-300 inline-block" href="#about">About us</a>
+    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-120 transition-all duration-300 inline-block" href="#our-plans">Our Plans</a>
+    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-120 transition-all duration-300 inline-block" href="#testimonials">Testimonials</a>
+    <a class="text-white p-3 px-6 hover:text-indigo-500 hover:scale-120 transition-all duration-300 inline-block" href="#contact">Contact</a>
    </div>
    
 </nav>    
@@ -42,26 +42,27 @@
     </div>
 </div>
 </header>
- 
-    <h1 class="text-cyan-100 text-3xl underline flex justify-center ">PRICING PLANS</h1>
 
+ <!--pricing cards-->
 <div class="pricing cards p-8">
+
+<h1 class="text-cyan-100 text-3xl underline justify-center ">PRICING PLANS</h1>
     
     <section id="our-plans">
 
- <div class="max-w-6xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-3 ">
+ <div class="max-w-6xl mx-auto grid grid-cols-1 gap-8 md:grid-cols-3 p-8">
+
             <!--card 1-->
             <div class="bg-slate-900 border border-slate-800 hover:scale-105 transition duration-300 p-8 rounded-2xl shadow-sm border border-gray-100">
                 <h2 class=" text-white text-xl font-bold">Starter</h2>
                 <p class="text-white text-sm font-medium uppercase tracking-widest" >For beginners or individuals</p>
                 <div class=" text-green-500 text-4xl font-bold mt-4">FREE</div>
                 <ul class="mt-6 space-y-4 text-white">
-                    <li>✔ Expense Tracking</li>
+                 <li>✔ Expense Tracking</li>
                  <li>✔ Budget Planning</li>
                  <li>✔ Monthly Reports</li>
                  <li>✔ Mobile Access</li>
-
-                    <li>Basic Analytics</li>
+                 <li>Basic Analytics</li>
                 </ul>
                 <button class="w-full mt-8 py-3 px-4 rounded-xl bg-gray-100 font-semibold hover:bg-gray-200 transition">Get Started</button>
             </div>
@@ -84,7 +85,7 @@
                 </div>
 
             <div class="bg-slate-900 border border-cyan-500 hover:scale-105 transition duration-300 p-8 rounded-2xl shadow-sm boder border-gray-100">
-                 <h2 class=" text-white text-xl font-bold">Wealth</h2>
+                 <h2 class=" text-white text-xl font-bold">Enterprise</h2>
                  <p class="text-white text-sm font-medium uppercase tracking-widest">For large companies needing advanced features</p>
                 <div class=" text-white text-4xl font-bold mt-4">$29<span class="text-lg font-normal text-white">/mo</span></div>
                 <ul class="mt-6 space-y-4 text-white">
@@ -100,6 +101,145 @@
                 </div>
 </section>
 </div>    
+ 
+<section id="testimonials"> 
+<!--testimonials cards-->
+<div class="max-w-5xl mx-auto grid grid-cols-1 sm-grid-cols-2 md:grid-cols-4  gap-6 ">
+
+<!--card 1-->
+    <div class="bg-slate-800 border border-cyan-400 rounded-2xl p-6 backdrop-blur-md hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500 transition duration-300">
+        <div class="flex text-cyan-400 text-xl mb-4">
+        ★ ★ ★ ★ ★
+        </div>
+
+     <!-- Testimonial Text -->
+     <p class="text-slate-300 leading-relaxed mb-6">
+        “CashMap completely changed how I track my spending and savings. 
+        The dashboard is clean, simple, and incredibly easy to use.”
+     </p>
+
+     <!-- User Info -->
+     <div class="flex items-center gap-4">
+
+     <!-- Profile Circle -->
+     <div class="w-12 h-12 rounded-full bg-cyan-500 flex items-center justify-center text-slate-900 font-bold">
+            J
+     </div>
+
+     <!-- Name + Role -->
+        <div>
+            <h3 class="text-white font-semibold">
+                James Mwiti
+            </h3>
+
+            <p class="text-slate-400 text-sm">
+                Financial Analyst
+            </p>
+        </div>
+
+    </div>
+
+</div>            
+
+<!--card 2-->
+   <div class="bg-cyan-900 border border-cyan-300 rounded-2xl p-6 backdrop-blur-md hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500 transition duration-300">
+        <div class="flex text-cyan-400 text-xl mb-4">
+        ★ ★ ★ ★ ★
+        </div>
+
+     <!-- Testimonial Text -->
+     <p class="text-slate-300 leading-relaxed mb-6">
+        “I love how clean and responsive the platform feels. 
+    Tracking expenses and savings has never been this easy.”
+     </p>
+
+     <!-- User Info -->
+     <div class="flex items-center gap-4">
+
+     <!-- Profile Circle -->
+     <div class="w-12 h-12 rounded-full bg-cyan-500 flex items-center justify-center text-slate-900 font-bold">
+            S
+     </div>
+
+     <!-- Name + Role -->
+        <div>
+            <h3 class="text-white font-semibold">
+                Sarah Kimani
+            </h3>
+
+            <p class="text-slate-400 text-sm">
+                Small Business Owner
+            </p>
+        </div>
+    </div>
     
+</div>
+
+<!--card 3-->
+   <div class="bg-slate-700 border border-sky-400 rounded-2xl p-6 backdrop-blur-md hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500 transition duration-300">
+        <div class="flex text-cyan-400 text-xl mb-4">
+        ★ ★ ★ ★ ★
+        </div>
+
+     <!-- Testimonial Text -->
+     <p class="text-slate-300 leading-relaxed mb-6">
+        “The analytics dashboard gave me a clearer picture of my financial habits. 
+    CashMap feels modern, fast, and reliable.”
+     </p>
+
+     <!-- User Info -->
+     <div class="flex items-center gap-4">
+
+     <!-- Profile Circle -->
+     <div class="w-12 h-12 rounded-full bg-cyan-500 flex items-center justify-center text-slate-900 font-bold">
+            B
+     </div>
+
+     <!-- Name + Role -->
+        <div>
+            <h3 class="text-white font-semibold">
+                Brian Otieno
+            </h3>
+
+            <p class="text-slate-400 text-sm">
+                Software Developer
+            </p>
+        </div>
+    </div>
+</div>    
+    
+<!--card 4-->
+   <div class="bg-teal-900 border border-teal-300 rounded-2xl p-6 backdrop-blur-md hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500 transition duration-300">
+        <div class="flex text-cyan-400 text-xl mb-4">
+        ★ ★ ★ ★ ★
+        </div>
+
+     <!-- Testimonial Text -->
+     <p class="text-slate-300 leading-relaxed mb-6">
+        “What stood out most was the user experience. 
+    Everything is intuitive, beautifully designed, and easy to navigate.”
+     </p>
+
+     <!-- User Info -->
+     <div class="flex items-center gap-4">
+
+     <!-- Profile Circle -->
+     <div class="w-12 h-12 rounded-full bg-cyan-500 flex items-center justify-center text-slate-900 font-bold">
+            A
+     </div>
+
+     <!-- Name + Role -->
+        <div>
+            <h3 class="text-white font-semibold">
+             Anita Wanjiku
+            </h3>
+
+            <p class="text-slate-400 text-sm">
+             Marketing Consultant
+            </p>
+        </div>
+</section>
+
+
 </body>
 </html>
