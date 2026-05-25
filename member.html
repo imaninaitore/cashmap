@@ -7,14 +7,24 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/624acf4e3e.js" crossorigin="anonymous"></script>
 </head>
-<body  class=" bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900 px-6 py-6 ">
+<body  class=" bg-gradient-to-r from-slate-900 via-cyan-950 to-slate-900  px-3 sm:px-6 py-6">
 
-<main class="ml-72 p-6">
+  <input type="checkbox" id="menu-toggle" class="hidden peer">
 
-<div class="flex items-center justify-between mb-8 bg-white/5 backdrop-blur-md border border-cyan-500 rounded-2xl px-6 py-4 ">
+<main class="ml-0 lg:ml-72 p-4 sm:p-6 ">
 
-<h1 class="text-white text-4xl ">
-Welcome John !
+  <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between mb-8 bg-white/5 backdrop-blur-md border border-cyan-500 rounded-2xl px-6 py-4">
+
+<!-- hamburger -->
+    <label for="menu-toggle"
+    class="lg:hidden text-white text-3xl cursor-pointer">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </label>
+
+<h1 class="text-white text-2xl sm:text-3xl lg:text-4xl ">
+Welcome Back !
 </h1>
 
 <div class="flex items-center gap-6">
@@ -30,10 +40,11 @@ Welcome John !
 
 </div> 
 
-    <p class="text-white text-4xl p-4">My dashboard</p>
 
     <!--card grid container-->
 <section id="dashboard" class="py-8 px-4"> 
+
+    <p class="text-white text-4xl p-4">My dashboard</p>
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6  bg-cyan-900 rounded p-6">
 
@@ -47,7 +58,7 @@ Welcome John !
 
         <p class="text-cyan-300 text-lg">Total Balance</p>
 
-       <h2 class="text-lime-300 text-3xl font-bold mt-2">
+       <h2 class="text-lime-300 lg:text-2xl sm:text-3xl text-3xl font-bold mt-2">
         12,450 Ksh
        </h2>
 
@@ -67,7 +78,7 @@ Welcome John !
 
       <p class="text-cyan-300 text-sm">Monthly Spending</p>
 
-      <h2 class="text-lime-300 text-3xl font-bold mt-2">
+      <h2 class="text-lime-300 lg:text-3xl text-2xl sm:text-3xl font-bold mt-2">
         $3,500 Budget
       </h2>
 
@@ -86,7 +97,7 @@ Welcome John !
 
      <p class="text-cyan-300 text-sm">Savings Progress</p>
 
-     <h2 class="text-white text-3xl font-bold mt-2">
+     <h2 class="text-white lg:text-3xl text-2xl sm:text-3xl font-bold mt-2">
         72%
      </h2>
 
@@ -108,7 +119,7 @@ Welcome John !
 </section> 
 
 <!--sidebar-->
-<aside class="fixed left-0 top-0 w-64 h-screen p-6 bg-gradient-to-b from-slate-900 via-cyan-800 to-slate-900">
+<aside class="hidden lg:block fixed left-0 top-0 w-64 h-screen p-6 bg-gradient-to-b from-slate-900 via-cyan-800 to-slate-900">
 
     <div class="logo">
     <p class="text-cyan-200 text text-4xl "><i class="fa-solid fa-coins" style="color: rgb(99, 230, 190);"></i>CashMap</p>
@@ -130,49 +141,66 @@ Welcome John !
 <!--budget section-->
 <section id="budget" class="py-8 px-4">
 
-<div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl ">
+<div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6 grid grid-cols-1 gap-6">  
+  
+  <h1 class="text-slate-100 lg:text-3xl text-2xl sm:text-3xl flex justify-center">Budget Tracking</h1>
 
-<h1 class="text-slate-100 text-3xl flex justify-center">Budget Tracking</h1>
+<!--card 1-->
+<div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-5">
 
- <h2 class="text-cyan-300">Monthly Budget Overview</h2>
- <div>
-    <ul class="text-slate-300">
-        <li>Total Budget: KSh 15,000 </li>
-        <li>Used So Far: KSh 9,200 </li>
-        <li>Remaining: KSh 5,800 </li>
-    </ul>
- </div>
-
-<h2 class="text-cyan-300">🍽️ Categories</h2>
-<div>
-    <ul class="text-slate-300">
-        <li>Food & Snacks → KSh 5,000 / 6,000 </li>
-        <li>Transport (Matatu/Bolt) → KSh 2,500 / 4,000 </li>
-        <li>Shopping (Clothes, grooming) → KSh 1,800 / 3,000</li>
-        <li>Bills (data, rent share, subscriptions) → KSh 1,000 / 2,000 </li>
-    </ul>
+   <h2 class="text-cyan-300">Monthly Budget Overview</h2>
+       <div>
+           <ul class="text-slate-300">
+        <li class="lg:text-3xl text-2xl sm:text-3xl" >Total Budget: <span class="text-lime-500">KSh 15,000 </span> </li>
+        <li class="lg:text-3xl text-2xl sm:text-3xl" >Used So Far: <span class="text-red-300">KSh 9,200 </span> </li>
+        <li class="lg:text-3xl text-2xl sm:text-3xl" >Remaining: <span class="text-lime-300"> KSh 5,800</span> </li>
+           </ul>
+       </div>
 </div>
 
-<h2 class="text-cyan-300">⚠️ Alerts</h2>
-<div>
-    <ul class="text-slate-300">
+<!--card 2-->
+<div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-5 ">
+
+<h2 class="text-cyan-300">Categories</h2>
+   <div>
+    <ul class="text-slate-200">
+        <li class="lg:text-3xl text-2xl sm:text-3xl">Food & Snacks →<span class="text-lime-300">KSh 5,000 / 6,000 </span> </li>
+        <li class="lg:text-3xl text-2xl sm:text-3xl">Transport (Matatu/Bolt) →<span class="text-lime-300">KSh 2,500 / 4,000</span>  </li>
+        <li class="lg:text-3xl text-2xl sm:text-3xl">Shopping (Clothes, grooming) →<span class="text-lime-300"> KSh 1,800 / 3,000</span></li>
+        <li class="lg:text-3xl text-2xl sm:text-3xl">Bills (data, rent share, subscriptions) → <span class="text-lime-300">KSh 1,000 / 2,000</span> </li>
+    </ul>
+   </div>
+
+</div>
+
+<!--card 3-->
+<div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-5 ">
+
+<h2 class="text-red-500">⚠️ Alerts</h2>
+   <div>
+    <ul class="text-red-300">
         <li>“You're spending fast on food & snacks this month ”</li>
         <li>“Transport usage is halfway through your budget”</li>
         <li>“Try reducing impulse shopping to save more” </li>
     </ul>
+   </div>
+
 </div>
 
-<h2 class="text-cyan-300">🧠 Insight</h2>
-<p class="text-slate-300">“Most of your spending goes to food and transport — small daily purchases are adding up.”</p>
+<h2 class="text-cyan-300"> Insight</h2>
+<p class="text-indigo-300">“Most of your spending goes to food and transport — small daily purchases are adding up.”</p>
+
+</div>
 
 </section>
 
 <section id="savings" class="py-8 px-4">
-<div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl ">
+
+<div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl grid grid-cols-1 gap-6  p-6">
 
     <h1 class="text-slate-100 text-3xl flex justify-center">SAVINGS PLAN</h1>
 
-    <h2 class="text-cyan-300">🎯 Savings Goals</h2>
+    <h2 class="text-cyan-300 underline text-lg "> Savings Goals</h2>
     <div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6">
 
       <div class="absolute top-4 right-4 bg-red-500/10 p-3 rounded-full">
@@ -218,43 +246,63 @@ Welcome John !
 
 <section id="expense" class="py-8 px-4">
 
-    <div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6 ">
+    <div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl grid grid-cols-1 gap-6  p-6 ">
 
-   <h1 class="text-slate-100 text-3xl flex justify-center"> EXPENSE MONITOR </h1>
-<h2> Recent Transactions</h2>
-<div>
+   <h1 class="text-slate-100 lg:text-3xl text-2xl sm:tlg:ext-3xl  text-2xl sm:text-3xlflex justify-center"> EXPENSE MONITOR </h1>
+   <!--card 1-->
+<div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6 ">
+
+<h2 class="text-cyan-500"> Recent Transactions</h2>
+   <div>
     <ul>
-        <li>Uber / Bolt ride → -KSh 250 </li>
-        <li>snacks → -KSh 150 </li>
-        <li>Netflix subscription → -KSh 1,100 </li>
-        <li>Airtime / Data bundle → -KSh 500 </li>
-        <li>Lunch at campus → -KSh 300 </li>
-        <li>Shopping (clothes) → -KSh 1,200 </li>
+        <li class="lg:text-3xl text-2xl sm:text-3xl text-cyan-100" >Uber / Bolt ride →<span class="text-red-500">- KSh 250</span>  </li>
+        <li class="lg:text-3xl text-2xl sm:text-3xl text-cyan-100" >snacks →<span class="text-red-500" > - KSh 150</span> </li>
+        <li class="lg:text-3xl text-2xl sm:text-3xl text-cyan-100" >Netflix subscription →<span class="text-red-500" >- KSh 1,100 </span> </li>
+        <li class="lg:text-3xl text-2xl sm:text-3xl text-cyan-100" >Airtime / Data bundle →<span class="text-red-500" >- KSh 500 </span> </li>
+        <li class="lg:text-3xl text-2xl sm:text-3xl text-cyan-100" >Lunch at campus → <span class="text-red-500" >- KSh 300</span> </li>
+        <li class="lg:text-3xl text-2xl sm:text-3xl text-cyan-100" >Shopping (clothes) →<span class="text-red-500" >- KSh 1,200</span>  </li>
     </ul>
+   </div>
 </div>
 
-<h2>📊 Category Breakdown</h2>
+<!--card 2-->
+<div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6 ">
+
+<h2 class="text-cyan-500"> Category Breakdown</h2>
 <ul>
-    <li>Food & Snacks → KSh 3,200 </li>
-    <li>Transport → KSh 2,100 </li>
-    <li>Entertainment → KSh 1,100 </li>
-    <li>Data & Bills → KSh 1,800 </li>
-    <li>Shopping → KSh 2,500 
+    <li  class="lg:text-3xl text-xl sm:text-xl text-cyan-100" >Food & Snacks → <span class="text-orange-500" >KSh 3,200</span> </li>
+    <li  class="lg:text-3xl text-xl sm:text-xl text-cyan-100" >Transport →<span class="text-orange-500" >KSh 2,100</span>  </li>
+    <li  class="lg:text-3xl text-xl sm:text-xl text-cyan-100" >Entertainment →<span class="text-orange-500" >KSh 1,100</span>  </li>
+    <li  class="lg:text-3xl text-xl sm:text-xl text-cyan-100" >Data & Bills → <span class="text-orange-500" >KSh 1,800</span> </li>
+    <li  class="lg:text-3xl text-xl sm:text-xl text-cyan-100" >Shopping →<span class="text-orange-500" > KSh 2,500</span> 
 </li>
 </ul>	
-<p>📉 Spending Insight
-•	“Food & snacks are your highest daily expense 🍔” 
-•	“Transport spending increases on weekdays” 
-•	“Entertainment subscriptions are consistent monthly costs” 
-</p>
 
 </div>
+
+<!--card 3-->
+<div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6 ">
+
+<h2 class="text-cyan-300" >Spending Insight</h2>
+
+<li  class="text-xl text-slate-100" >“Food & snacks are your highest daily expense ”</li>
+<li  class="text-xl text-slate-100" >“Transport spending increases on weekdays”</li>
+<li  class="text-xl text-slate-100" >“Entertainment subscriptions are consistent monthly costs” </li>
+
+</div>
+
+</div>
+
+
 </section>
 
 <section id="goal" class="py-8 px-4">
-    <div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6 ">
+    <div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6 grid grid-cols-1 gap-7">
     <h1 class="text-slate-100 text-3xl flex justify-center"> GOAL TRACKING </h1>
-<h2>Active Goals</h2> 
+<h2 class="text-orange-500 text-xl underline">Active Goals</h2> 
+
+<div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6 ">
+
     <p class="text-cyan-300 text-sm">Save for Laptop</p>
 
       <h2 class="text-lime-300 text-3xl font-bold mt-2">
@@ -264,12 +312,14 @@ Welcome John !
       <h2 class="text-white text-3xl font-bold mt-2">
         progress:(ksh 35,000) 44%
        </h2>
-
        <!-- progress bar -->
        <div class="w-full bg-slate-700 rounded-full h-2 mt-4">
         <div class="bg-lime-400 h-2 rounded-full" style="width:44%"></div>
        </div>
+</div>
     
+<div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6 ">
+
        <p class="text-cyan-300 text-sm">Emergency fund</p>
 
       <h2 class="text-lime-300 text-3xl font-bold mt-2">
@@ -284,7 +334,10 @@ Welcome John !
        <div class="w-full bg-slate-700 rounded-full h-2 mt-4">
         <div class="bg-lime-400 h-2 rounded-full" style="width:56%"></div>
        </div>
-     
+</div> 
+
+<div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6 ">
+
        <p class="text-cyan-300 text-sm">Driving School</p>
 
       <h2 class="text-lime-300 text-3xl font-bold mt-2">
@@ -299,32 +352,43 @@ Welcome John !
        <div class="w-full bg-slate-700 rounded-full h-2 mt-4">
         <div class="bg-lime-400 h-2 rounded-full" style="width:40%"></div>
        </div>
+</div>
 
-<h2>Time Estimates</h2> 
-<div>
+<div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6 ">
+
+<h2 class="text-white text-3xl font-bold mt-2 ">Time Estimates</h2> 
+   <div>
     <ul>
-        <li>Laptop → 5-6 months left </li>
-        <li>Emergency fund → 3-4 months left </li>
-        <li>Driving school → 2-3 months left </li>
+        <li class=" text-lg sm:text-xl lg:text-3xl text-slate-200" >Laptop →<span class="text-xl text-lime-100" >5-6 months left</span>  </li>
+        <li class=" text-lg sm:text-xl lg:text-3xl text-slate-200" >Emergency fund →<span class="text-xl text-lime-100" > 3-4 months left</span> </li>
+        <li class=" text-lg sm:text-xl lg:text-3xl text-slate-200" >Driving school →<span class="text-xl text-lime-100" > 2-3 months left </span></li>
     </ul>
+   </div>
+
+   <p class="text-xl text-violet-300"> Insight :“Your phone and emergency fund goals are the most realistic to finish soon if you stay consistent.”</p>
+
+   </div>
 </div>
-
-<p>🧠 Insight :“Your phone and emergency fund goals are the most realistic to finish soon if you stay consistent.”</p>
-
-</div>
-
 </section>
 
 <section id="mentorship" class="py-8 px-4">
 
     <div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6">
 
-    <h1 class="text-3xl text-white flex justify-center">WE HAVE MENTORSHIP PROGRAMMES !!</h1>  
+    <h1 class="lg:text-3xl text-2xl sm:text-3xl text-white flex justify-center">WE HAVE MENTORSHIP PROGRAMMES !!</h1>  
 
-<p class="text-cyan-300 text-3xl py-6 px-6  ">Subscribe to our financial mentorship online classes</p>
+<p class="text-cyan-300 lg:text-3xl text-2xl sm:text-3xl py-6 px-6  ">Subscribe to our financial mentorship online classes</p>
 
-<iframe class="p-7" width="560" height="315" src="https://www.youtube.com/embed/pdVNzp2S5a4?si=00H_FYqnYGtsojDd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+<div class="w-full aspect-video mt-6">
+    <iframe
+        class="w-full h-full rounded-2xl"
+        src="https://www.youtube.com/embed/pdVNzp2S5a4?si=00H_FYqnYGtsojDd"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+</div>
+ text-lg sm:text-xl lg:text-3xl
         <form class="flex flex-col gap-3">
                 <input 
                     type="email" 
@@ -342,7 +406,114 @@ Welcome John !
 
 </main>
 
-<footer>
+<!--footer-->
+<footer class="bg-slate-950 border-t border-cyan-500/10 text-slate-300 ml-0 lg:ml-72 p-4 sm:p-6">
+
+    <div class="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+        <!-- Brand -->
+        <div>
+            <h2 class="text-2xl font-bold text-white mb-4">
+                Cash<span class="text-cyan-400">Map</span>
+            </h2>
+
+            <p class="text-slate-400 leading-relaxed">
+                Smart financial tracking and budgeting tools designed to help 
+                you manage money with clarity and confidence.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+            <h3 class="text-white font-semibold mb-4">
+                Quick Links
+            </h3>
+
+            <ul class="space-y-3">
+                <li>
+                    <a href="index.html" class="hover:text-cyan-400 transition duration-300">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html" class="hover:text-cyan-400 transition duration-300">
+                        Testimonials
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Resources -->
+        <div>
+            <h3 class="text-white font-semibold mb-4">
+                Resources
+            </h3>
+
+            <ul class="space-y-3">
+                <li>
+                    <a href="#" class="hover:text-cyan-400 transition duration-300">
+                        Help Center
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="hover:text-cyan-400 transition duration-300">
+                        Privacy Policy
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="hover:text-cyan-400 transition duration-300">
+                        Terms of Service
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+            <h3 class="text-white font-semibold mb-4">
+                Stay Updated
+            </h3>
+
+            <p class="text-slate-400 mb-4">
+                Get the latest updates and financial tips from CashMap.
+            </p>
+
+            <form class="flex flex-col gap-3">
+                <input 
+                    type="email" 
+                    placeholder="Enter your email"
+                    class="bg-slate-800 border border-cyan-500/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-400">
+
+                <button 
+                    class="bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-semibold py-3 rounded-lg transition duration-300">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+    <section id="contact">
+        <p class="text-3xl flex justify-center">Contact us </p>
+<div class="social-links flex justify-center gap-6 text-4xl text-cyan-300">
+                <a href="https://www.instagram.com/" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/en/" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.gmail.com" title="YouTube"><i class="fa-solid fa-at"></i></a>
+
+            </div>
+</section>
+
+
+    <!-- Bottom Footer -->
+    <div class="border-t border-cyan-500/10 py-6 text-center text-slate-500 text-sm">
+        © 2026 CashMap. All rights reserved.
+    </div>
 
 </footer>
 </body>
