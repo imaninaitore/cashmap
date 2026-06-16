@@ -11,6 +11,10 @@ class User{
     }
 }
 
+function signUpUser(username,email,password){
+    return new User(username,email,password);
+}
+
 let users = JSON.parse(localStorage.getItem("users")) || [];
 
 signupForm.addEventListener("submit", function(event){
@@ -20,11 +24,11 @@ signupForm.addEventListener("submit", function(event){
     const emailValue = email.value;
     const passwordValue = password.value;
 
-    const user = new User{
+    const user = new User(
      usernameValue,
      emailValue,
      passwordValue
-    };
+    );
 
     users.push(user)
     localStorage.setItem("users",JSON.stringify(users));
@@ -33,6 +37,7 @@ signupForm.addEventListener("submit", function(event){
 
 });
 
+module.exports = { User, signUpUser }; 
 
 
 
