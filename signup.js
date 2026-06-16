@@ -10,6 +10,16 @@ signupForm.addEventListener("submit", function(event){
     const emailValue = email.value;
     const passwordValue = password.value;
 
+    const user = {
+        username: usernameValue,
+        email: emailValue,
+        password: passwordValue
+    };
+
+    localStorage.setItem("user",JSON.stringify(user));
+
+    alert("Account created successfully!");
+
 
 });
 
