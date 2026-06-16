@@ -20,6 +20,7 @@ Additional features such as goal setting , savings plan and mentorship programs 
 - HTML (language)
 - Tailwind CSS (styling)
 - font awesome icons 
+- javascript 
 
 ## Project Structure
 ```text
@@ -42,6 +43,8 @@ cd cashmap
 
 2. **Open the project:**
 Simply open the index.html file in your preferred browser to view the current build.
+
+## how to run tests
 
 
 ## CONTRIBUTIONS
