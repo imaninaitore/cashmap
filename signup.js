@@ -3,6 +3,8 @@ const username  = document.getElementById('name');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 
+let users = JSON.parse(localStorage.getItem("users")) || [];
+
 signupForm.addEventListener("submit", function(event){
     event.preventDefault();
 
@@ -16,12 +18,13 @@ signupForm.addEventListener("submit", function(event){
         password: passwordValue
     };
 
-    localStorage.setItem("user",JSON.stringify(user));
+    users.push(user)
+    localStorage.setItem("users",JSON.stringify(users));
 
     alert("Account created successfully!");
 
-
 });
+
 
 
 
