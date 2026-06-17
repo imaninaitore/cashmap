@@ -4,4 +4,28 @@ const email = email.value
 const password = password.value
 
 //get all users from local storage
-let users =JSON.parse(localStorage.getItem ("users")) || []
+let users =JSON.parse(localStorage.getItem ("users")) || [];
+
+//find matching user
+const correctUser = users.find(user =>{
+return user.email === emailValue && user.password === passwordValue;
+
+//condition for no match found
+if(!loggedInUser) {
+    alert("wrong log in details or not signed in yet")
+    return;
+}
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
