@@ -51,6 +51,7 @@ if(passwordValue !== confirmPasswordValue){
     localStorage.setItem("users",JSON.stringify(users));
 
     alert("Account created successfully!");
+    window.location.href = "member.html";
 });
 
 
