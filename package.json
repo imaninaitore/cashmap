@@ -1,0 +1,24 @@
+{
+  "name": "cashmap",
+  "version": "1.0.0",
+  "description": "CashMap is a modern finance and budgeting web application designed to help users track expenses, manage budgets, and visualize spending habits with ease.",
+  "main": "signup.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imaninaitore/cashmap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/imaninaitore/cashmap/issues"
+  },
+  "homepage": "https://github.com/imaninaitore/cashmap#readme",
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}
