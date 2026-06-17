@@ -2,8 +2,9 @@ const{signUpUser} = require("./signup2") //importing function
 describe("Test for Signup", () =>{
     it("should successfully create an account",() =>{
 
-        const user = signUpUser("Imani","imani@gmail.com","1234");
+        const user = signUpUser("Imani","imani@gmail.com","1234"); //this is like what the user inputs
 
+        //this is the test itself
      expect(user.username)
      .toBe("Imani");
      expect(user.email)
