@@ -45,7 +45,18 @@ cd cashmap
 Simply open the index.html file in your preferred browser to view the current build.
 
 ## how to run tests
+This project requires Jest for testing
+- install jest 
+```bash
+npm init -y
+npm install
+```
+- open package.json and change test script to jest
 
+- write the code below to run the test in the test files created such as signup.test.js
+```bash
+npm test
+```
 
 ## CONTRIBUTIONS
  Positive contributions are welcome and greatly appreciated.
