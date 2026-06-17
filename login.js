@@ -15,6 +15,11 @@ if(!loggedInUser) {
     alert("wrong log in details or not signed in yet")
     return;
 }
+
+//save the logged in user
+localStorage.setItem("currentUser", JSON.stringify(loggedInUser));
+window.location.href = "member.html"
+
 })
 
 
