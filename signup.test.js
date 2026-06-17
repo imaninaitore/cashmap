@@ -1,4 +1,4 @@
-const{signUpUser} = require("./signup") //importing function
+const{signUpUser} = require("./signup2") //importing function
 describe("Test for Signup", () =>{
     it("should successfully create an account",() =>{
 
