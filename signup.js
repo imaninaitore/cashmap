@@ -19,10 +19,6 @@ class User{
     }
 }
 
-function signUpUser(username,email,password,dateOfBirth,phoneNumber){
-    return new User(username,email,password,dateOfBirth,phoneNumber);
-}
-
 let users = JSON.parse(localStorage.getItem("users")) || [];
 
 //submit event 

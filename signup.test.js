@@ -11,6 +11,7 @@ describe("Test for Signup", () =>{
      .toBe("imani@gmail.com");
      expect(user.password)
      .toBe("1234");
+     
     });
     
 });
