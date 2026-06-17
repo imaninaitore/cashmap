@@ -37,7 +37,7 @@ signupForm.addEventListener("submit", function(event){
 
 });
 
-module.exports = { User, signUpUser }; 
+
 
 
 
