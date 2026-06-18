@@ -10,4 +10,4 @@ function signUpUser(username,email,password){
     return new User(username,email,password);
 }
 
-module.exports = { User, signUpUser }; 
+module.exports = {User, signUpUser};
