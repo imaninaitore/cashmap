@@ -11,3 +11,5 @@ function logInUser(usernameValue,emailValue,passwordValue){
 
   return { success: true, user: correctUser };
 }
+
+module.exports = {logInUser};
