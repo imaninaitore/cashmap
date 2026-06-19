@@ -26,12 +26,15 @@ if(!correctUser) {
     alert("wrong log in details or not signed in yet")
     return;
 }
+
 //save the logged in user
 localStorage.setItem("currentUser", JSON.stringify(correctUser));
 //redirect
 window.location.href = "member.html"
 
 });
+
+
 
 
 
