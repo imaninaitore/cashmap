@@ -4,17 +4,19 @@ const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 if(!currentUser){
      window.location.href = "login.html";
 }
+
 //display their info
-document.getElementById("welcome").textContent =
+document.getElementById("welcome-message").textContent =
 `Welcome back ${currentUser.username} !`;
 
-document.getElementById("member-email").textContent =
+document.getElementById("user-email").textContent =
 `Email: ${currentUser.email}`;
 
-document.getElementById("member-phone").textContent =
+document.getElementById("user-phone").textContent =
 `Phone: ${currentUser.phoneNumber}`;
 
 function logout() {
    localStorage.removeItem("currentUser");
    window.location.href = "index.html";
 }
+
