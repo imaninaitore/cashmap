@@ -3,48 +3,21 @@
     {
       "id": 1,
       "name": "Imani",
+      "email": "imaninaitore1726@gmail.com",
       "Account balance":50000 ,
       "savings account balance": 20000
     },
     {
       "id":2 ,
       "name": "Anna",
+      "email": "anna.k.wamache@gmail.com",
       "Account balance": 60000 ,
       "savings account balance":10000 
     },
     {
-      "id":3 ,
-      "name": "Brenda",
-      "Account balance":40000 ,
-      "savings account balance":15000 
-    },
-    {
-      "id":4 ,
-      "name": "Jonathan",
-      "Account balance":30000 ,
-      "savings account balance":12000 
-    },
-    {
-      "id":5 ,
-      "name": "Natasha",
-      "Account balance":45000 ,
-      "savings account balance":13000
-    },
-    {
-      "id": 6,
-      "name": "Kayla",
-      "Account balance":33000 ,
-      "savings account balance":20000 
-    },
-    {
-      "id":7 ,
-      "name": "Beverly",
-      "Account balance":65000 ,
-      "savings account balance":23000 
-    },
-    {
       "id":8 ,
       "name": "Michael",
+      "email": "michael.wamache@gmail.com",
       "Account balance":200000 ,
       "savings account balance":74000
     }
