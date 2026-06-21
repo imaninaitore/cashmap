@@ -58,19 +58,18 @@
     <div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6">
 
          <div class="absolute top-4 right-4 bg-cyan-500 p-3 rounded-full">
-         <i class="fa-solid fa-wallet text-cyan-300 text-xl"></i>
+         <i class="fa-solid fa-wallet text-cyan-300 text-lg"></i>
          </div>
 
-        <p class="text-cyan-300 text-sm sm:text-base">Total Balance</p>
+        <p class="text-cyan-300 text-sm sm:text-base">Current account: </p>
 
-       <h2 class="text-lime-300 lg:text-2xl sm:text-3xl text-3xl font-bold mt-2">
-        12,450 Ksh
-       </h2>
+       <p class="text-cyan-100">Total: Ksh<span id="current-account" class="text-lime-300 lg:text-2xl sm:text-3xl text-3xl font-bold mt-2">
+        
+       </span></p>
 
        <div class="mt-4 text-sm text-slate-300 space-y-1">
-        <p>Available: <span class="text-lime-300">9,870 Ksh</span></p>
-        <p>Pending: <span class="text-red-300">580 Ksh</span></p>
-        <p>Updated: <span class="text-white">Today</span></p>
+        <p>Available: <span class="text-lime-300"> Ksh</span></p>
+        <p>Pending: <span class="text-red-300"> Ksh</span></p>
        </div>
     </div>
 
@@ -81,11 +80,10 @@
         <i class="fa-solid fa-chart-line text-red-300 text-xl"></i>
       </div>
 
-      <p class="text-cyan-300 text-sm">Monthly Spending</p>
+      <p class="text-cyan-300 text-sm">Transactional account</p>
 
-      <h2 class="text-lime-300 lg:text-3xl text-2xl sm:text-3xl font-bold mt-2">
-        $3,500 Budget
-      </h2>
+      <p class="text-cyan-100">Total: Ksh<span id="transactional-account" class="text-lime-300 lg:text-2xl sm:text-3xl text-3xl font-bold mt-2">
+       </span></p>
 
       <div class="mt-4 text-sm text-slate-300 space-y-1">
         <p>Spent: <span class="text-white">$2,340</span></p>
@@ -100,17 +98,20 @@
         <i class="fa-solid fa-piggy-bank text-green-300 text-xl"></i>
       </div>
 
-     <p class="text-cyan-300 text-sm">Savings Progress</p>
+     <p class="text-cyan-300 text-sm">Savings account</p>
 
-     <h2 class="text-white lg:text-3xl text-2xl sm:text-3xl font-bold mt-2">
-        72%
-     </h2>
+<p class="text-cyan-100">Total: Ksh<span id="savings-account" class="text-lime-300 lg:text-2xl sm:text-3xl text-3xl font-bold mt-2">
+</span></p>
 
      <div class="mt-4 text-sm text-slate-300 space-y-1">
         <p>Goal: <span class="text-white">$5,000</span></p>
         <p>Saved: <span class="text-lime-300">$3,600</span></p>
         <p>Target: <span class="text-white">Dec 2026</span></p>
      </div>
+
+     <h2 class="text-white lg:text-3xl text-2xl sm:text-3xl font-bold mt-2">
+        72%
+     </h2>
 
      <!-- progress bar -->
      <div class="w-full bg-slate-700 rounded-full h-2 mt-4">

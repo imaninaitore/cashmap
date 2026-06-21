@@ -20,3 +20,30 @@ function logout() {
    window.location.href = "index.html";
 }
 
+//fetch financial data
+fetch("./financedata.json")
+  .then(response => response.json())
+  .then(data => {
+    //match by email
+    const accountUser = data.users.find(user =>
+   user.email === currentUser.email);
+//check if found
+ if (!accountUser) {
+   console.log("Users financial accounts not found !");
+   return;
+}  
+
+//display balances
+document.getElementById("current-account").textContent =
+accountUser["Account balance"];
+
+document.getElementById("transactional-account").textContent =
+accountUser["transactional account balance"];
+
+document.getElementById("savings-account").textContent =
+accountUser["savings account balance"];
+
+});
+
+
+
