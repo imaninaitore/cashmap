@@ -4,21 +4,24 @@
       "id": 1,
       "name": "Imani",
       "email": "imaninaitore1726@gmail.com",
-      "Account balance":50000 ,
+      "Account balance":10000,
+      "transactional account balance":40000,
       "savings account balance": 20000
     },
     {
       "id":2 ,
       "name": "Anna",
       "email": "anna.k.wamache@gmail.com",
-      "Account balance": 60000 ,
+      "Account balance": 50000 ,
+      "transactional account balance":55000,
       "savings account balance":10000 
     },
     {
       "id":8 ,
       "name": "Michael",
       "email": "michael.wamache@gmail.com",
-      "Account balance":200000 ,
+      "Account balance":80000 ,
+      "transactional account balance":200000,
       "savings account balance":74000
     }
   ]
