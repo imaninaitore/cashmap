@@ -14,3 +14,7 @@ document.getElementById("member-email").textContent =
 document.getElementById("member-phone").textContent =
 `Phone: ${currentUser.phoneNumber}`;
 
+function logout() {
+   localStorage.removeItem("currentUser");
+   window.location.href = "login.html";
+}
