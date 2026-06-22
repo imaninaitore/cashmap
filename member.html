@@ -100,14 +100,19 @@
 </span></p>
 
      <div class="mt-4 text-sm text-slate-300 space-y-1">
-        <p>Goal: <span class="text-white">$5,000</span></p>
-        <p>Saved: <span class="text-lime-300">$3,600</span></p>
-        <p>Target: <span class="text-white">Dec 2026</span></p>
+        <p>Goal: <span class="text-white"></span></p>
+
+          <button class="text-red-400" id="edit-btn">Edit budget</button>
+
+         <div id="budget-edit-section" style="display:block;">
+         <input type="number" id="budget-input" placeholder="Enter new budget">
+         <button class="text-cyan-200" id="save-budget-btn">Save</button>
+         </div>
+
+        <p>Saved: <span class="text-lime-300"></span></p>
      </div>
 
-     <h2 class="text-white lg:text-3xl text-2xl sm:text-3xl font-bold mt-2">
-        72%
-     </h2>
+        <p id="progress-percentage" class="text-white lg:text-3xl text-2xl sm:text-3xl font-bold mt-2"></p>
 
      <!-- progress bar -->
      <div class="w-full bg-slate-700 rounded-full h-2 mt-4">
@@ -172,6 +177,15 @@
 <div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-5 ">
 
 <h2 class="text-cyan-300 text-sm sm:text-base">Categories of expenses</h2>
+   <div>
+    <ul class="text-slate-200">
+        <li class="text-sm sm:text-base lg:text-2xl">Food & Snacks →<span class="text-lime-300">Ksh </span> </li>
+        <li class="text-sm sm:text-base lg:text-2xl">Transport (Matatu/Bolt) →<span class="text-lime-300">KSh </span>  </li>
+        <li class="text-sm sm:text-base lg:text-2xl">Shopping (Clothes, grooming) →<span class="text-lime-300"> KSh </span></li>
+        <li class="text-sm sm:text-base lg:text-2xl">Bills (data, rent share, subscriptions) → <span class="text-lime-300">KSh </span> </li>
+    </ul>
+   </div>
+
    <div>
  <h1 class="text-red-500 text-xl"> This is a pro - feature !</h1>
  <button class="bg-red-300 p-2">UPGRADE SUBSCRIPTION</button>
@@ -263,6 +277,16 @@
 <div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6 ">
 
   <h2 class="text-cyan-500"> Recent Transactions</h2>
+  <div>
+    <ul>
+        <li class="text-sm sm:text-base lg:text-2xl text-cyan-100" >Uber / Bolt ride →<span class="text-red-500">- KSh -</span> </li>
+        <li class="text-sm sm:text-base lg:text-2xl text-cyan-100" >snacks →<span class="text-red-500" > - KSh -</span> </li>
+        <li class="text-sm sm:text-base lg:text-2xl text-cyan-100" >Netflix subscription →<span class="text-red-500" >- KSh -</span> </li>
+        <li class="text-sm sm:text-base lg:text-2xl text-cyan-100" >Airtime / Data bundle →<span class="text-red-500" >- KSh -</span> </li>
+        <li class="text-sm sm:text-base lg:text-2xl text-cyan-100" >Lunch at campus → <span class="text-red-500" >- KSh -</span> </li>
+        <li class="text-sm sm:text-base lg:text-2xl text-cyan-100" >Shopping (clothes) →<span class="text-red-500" >- KSh -</span> </li>
+    </ul>
+   </div>
     <div>
     <h1 class="text-red-500 text-xl"> This is a pro - feature !</h1>
     <button class="bg-red-300 p-2">UPGRADE SUBSCRIPTION</button>
