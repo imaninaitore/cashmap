@@ -151,3 +151,22 @@ expenses.forEach(expense => {
         bills += expense.amount;
     }
 });
+
+//highest spending
+let highestCategory = "food";
+let highestAmount = food;
+
+if (transport > highestAmount) {
+    highestAmount = transport;
+    highestCategory = "transport";
+}
+
+if (shopping > highestAmount) {
+    highestAmount = shopping;
+    highestCategory = "shopping";
+}
+
+if (bills > highestAmount) {
+    highestAmount = bills;
+    highestCategory = "bills";
+}
