@@ -47,21 +47,17 @@ accountUser["savings account balance"];
 
 //monthly budget section
 //get elements
-const totalBudget = document.getElementById("total-budget");
+const totalBudgetDisplay= document.getElementById("total-budget");
 const usedBudget = document.getElementById("used-money");
 const remainingBudget = document.getElementById("remaining-money");
 const editBtn = document.getElementById("edit-btn");
-
+const budgetEditSection = document.getElementById("budget-edit-section");
+const budgetInput = document.getElementById("budget-input");
+const saveBudgetBtn = document.getElementById("save-budget-btn");
 
 //display to show
-let totalBudget = 0;
-let expenses = [
-    { name: "Food", amount:0 },
-    { name: "Transport", amount: 0},
-    { name: "Shopping", amount: 0}
-    { name: "Bills", amount: 0}
-
-]
+let totalBudget = 10000;
+expense-records
 
 // Function to update budget 
 function updateBudget() {
@@ -75,21 +71,61 @@ function updateBudget() {
     const remaining = totalBudget - usedSoFar;
 
     // Display values
-    totalBudget.textContent = totalBudget;
-    usedBudget.textContent = usedSoFar;
-    remainingBudget.textContent = remaining;
+    totalBudgetDisplay.textContent = totalBudget;
+    usedBudget.textContent = `KSh ${usedSoFar}`;
+    remainingBudget.textContent = `KSh ${remaining}`;
 }
-
-// Edit button
+//edit button
 editBtn.addEventListener("click", function () {
-    const newBudget = Number(prompt("Enter new monthly budget"));
+    if (budgetEditSection.style.display === "none") {
+        budgetEditSection.style.display = "block";
+    } else {
+        budgetEditSection.style.display = "none";
+    }
+});
 
-    if (!isNaN(newBudget) && newBudget > 0) {
+//save new budget
+saveBudgetBtn.addEventListener("click", function () {
+    const newBudget = Number(budgetInput.value);
+
+    if (newBudget > 0) {
         totalBudget = newBudget;
         updateBudget();
+
+        budgetInput.value = "";
+        budgetEditSection.style.display = "none";
     } else {
-        alert("Please enter a valid budget amount");
+        alert("Enter a valid amount");
     }
 });
 
 updateBudget(); //call the function
+
+//EXPENSE TRACKING SECTION
+const expenseList = document.getElementById("expenses");
+
+function displayExpenses() {
+    expenseList.innerHTML = "";
+
+    expenses.forEach(expense => {
+        const li = document.createElement("li");
+        li.textContent = `${expense.name}: KSh ${expense.amount}`;
+        expenseList.appendChild(li);
+    });
+}
+
+//call
+displayExpenses();
+
+
+//calculating total expenses
+const totalExpensesDisplay = document.getElementById("total-expenses");
+
+function calculateTotalExpenses() {
+const totalExpenses = expenses.reduce((sum, expense) => {
+    return sum + expense.amount;
+}, 0);
+totalExpensesDisplay.textContent = totalExpenses;
+}
+
+calculateTotalExpenses();
