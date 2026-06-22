@@ -38,6 +38,7 @@ expenses = accountUser["mpesa-expense-records"];
 displayExpenses();
 updateBudget();
 calculateTotalExpenses();
+giveInsights()
 
 //display balances
 document.getElementById("current-account").textContent =
@@ -131,10 +132,14 @@ totalExpensesDisplay.textContent = totalExpenses;
 }
 
 //creating insights section
+function giveInsights(){
+
 let food = 0;
 let transport = 0;
 let shopping = 0;
-let bills = 0;
+let bills = 0; 
+
+
 
 //loop
 expenses.forEach(expense => {
@@ -169,4 +174,11 @@ if (shopping > highestAmount) {
 if (bills > highestAmount) {
     highestAmount = bills;
     highestCategory = "bills";
+}
+
+
+//displaying the insight
+const insightDisplay = document.getElementById("spending-insight");
+insightDisplay.textContent =
+`You spend most on ${highestCategory} : (KSh ${highestAmount})`;
 }
