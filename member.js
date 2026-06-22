@@ -34,6 +34,9 @@ fetch("./financedata.json")
     } 
 expenses = accountUser["mpesa-expense-records"];
 
+savingsBalance = accountUser["savings account balance"];
+
+updateSavingsGoal();
 //call functions
 displayExpenses();
 updateBudget();
@@ -216,15 +219,45 @@ const savingsGoalEditSection = document.getElementById("savings-goal-edit-sectio
 const goalInput = document.getElementById("goal-input");
 const saveGoalBtn = document.getElementById("save-goal");
 
-//get balance from json 
-let savingsBalance = accountUser["savings account balance"];
 
 //default goal
-let savingsGoal = 50000;
+let savingsGoal = 80000;
+let savingsBalance = 0;
 
 //updating the savings section in the dashboard
+function updateSavingsGoal() {
 
+    const progress = (savingsBalance / savingsGoal) * 100;
+    const remaining = savingsGoal - savingsBalance;
 
+    goalDisplay.textContent = `KSh ${savingsGoal}`;
+    progressDisplay.textContent = `${progress.toFixed(0)}%`;
+    savingsRemainingDisplay.textContent = `KSh ${remaining}`;
+}
 
+editGoalBtn.addEventListener("click", function () {
+    if (savingsGoalEditSection.style.display === "none") {
+        savingsGoalEditSection.style.display = "block";
+    } else {
+        savingsGoalEditSection.style.display = "none";
+    }
+});
+
+saveGoalBtn.addEventListener("click", function () {
+
+    const newGoal = Number(goalInput.value);
+
+    if (newGoal > 0) {
+        savingsGoal = newGoal;
+        updateSavingsGoal();
+
+        goalInput.value = "";
+        savingsGoalEditSection.style.display = "none";
+    } else {
+        alert("Enter a valid savings goal");
+    }
+});
+
+updateSavingsGoal();
 
 
