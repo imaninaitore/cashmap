@@ -50,6 +50,8 @@ accountUser["savings account balance"];
 const totalBudget = document.getElementById("total-budget");
 const usedBudget = document.getElementById("used-money");
 const remainingBudget = document.getElementById("remaining-money");
+const editBtn = document.getElementById("edit-btn");
+
 
 //display to show
 let totalBudget = 0;
@@ -77,5 +79,17 @@ function updateBudget() {
     usedBudget.textContent = usedSoFar;
     remainingBudget.textContent = remaining;
 }
+
+// Edit button
+editBtn.addEventListener("click", function () {
+    const newBudget = Number(prompt("Enter new monthly budget"));
+
+    if (!isNaN(newBudget) && newBudget > 0) {
+        totalBudget = newBudget;
+        updateBudget();
+    } else {
+        alert("Please enter a valid budget amount");
+    }
+});
 
 updateBudget(); //call the function
