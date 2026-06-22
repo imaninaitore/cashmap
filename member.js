@@ -37,6 +37,7 @@ expenses = accountUser["mpesa-expense-records"];
 //call functions
 displayExpenses();
 updateBudget();
+calculateTotalExpenses();
 
 //display balances
 document.getElementById("current-account").textContent =
@@ -128,5 +129,3 @@ const totalExpenses = expenses.reduce((sum, expense) => {
 }, 0);
 totalExpensesDisplay.textContent = totalExpenses;
 }
-
-calculateTotalExpenses();
