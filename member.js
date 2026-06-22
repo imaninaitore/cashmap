@@ -34,7 +34,9 @@ fetch("./financedata.json")
     } 
 expenses = accountUser["mpesa-expense-records"];
 
-
+//call functions
+displayExpenses();
+updateBudget();
 
 //display balances
 document.getElementById("current-account").textContent =
@@ -102,7 +104,6 @@ saveBudgetBtn.addEventListener("click", function () {
     }
 });
 
-updateBudget(); //call the function
 
 //EXPENSE TRACKING SECTION
 const expenseList = document.getElementById("expenses");
@@ -116,9 +117,6 @@ function displayExpenses() {
         expenseList.appendChild(li);
     });
 }
-
-//call
-displayExpenses();
 
 
 //calculating total expenses
