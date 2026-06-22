@@ -31,7 +31,10 @@ fetch("./financedata.json")
  if (!accountUser) {
    console.log("Users financial accounts not found !");
    return;
-}  
+    } 
+expenses = accountUser["mpesa-expense-records"];
+
+
 
 //display balances
 document.getElementById("current-account").textContent =
@@ -57,7 +60,7 @@ const saveBudgetBtn = document.getElementById("save-budget-btn");
 
 //display to show
 let totalBudget = 10000;
-expense-records
+let expenses = [];
 
 // Function to update budget 
 function updateBudget() {
