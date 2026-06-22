@@ -6,6 +6,12 @@
       "email": "imaninaitore1726@gmail.com",
       "Account balance":10000,
       "transactional account balance":40000,
+      "mpesa-expense-records":[
+        { "name": "Food", "amount": 7000 },
+        { "name": "Transport", "amount": 5000 },
+        { "name": "shopping", "amount": 8000 },
+        { "name": "bills", "amount": 10000}
+      ],
       "savings account balance": 20000
     },
     {
@@ -14,6 +20,12 @@
       "email": "anna.k.wamache@gmail.com",
       "Account balance": 50000 ,
       "transactional account balance":55000,
+      "mpesa-expense-records":[
+        { "name": "Food", "amount": 15000 },
+        { "name": "Transport", "amount": 5000 },
+        { "name": "shopping", "amount":10000 },
+        { "name": "bills", "amount": 20000}
+      ],
       "savings account balance":10000 
     },
     {
@@ -22,6 +34,12 @@
       "email": "michael.wamache@gmail.com",
       "Account balance":80000 ,
       "transactional account balance":200000,
+      "mpesa-expense-records":[
+        { "name": "Food", "amount": 15000 },
+        { "name": "Transport", "amount": 40000 },
+        { "name": "shopping", "amount": 10000 },
+        { "name": "bills", "amount": 80000}
+      ],
       "savings account balance":74000
     }
   ]
