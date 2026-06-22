@@ -244,9 +244,7 @@ editGoalBtn.addEventListener("click", function () {
 });
 
 saveGoalBtn.addEventListener("click", function () {
-
     const newGoal = Number(goalInput.value);
-
     if (newGoal > 0) {
         savingsGoal = newGoal;
         updateSavingsGoal();
@@ -259,5 +257,3 @@ saveGoalBtn.addEventListener("click", function () {
 });
 
 updateSavingsGoal();
-
-
