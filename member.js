@@ -129,3 +129,25 @@ const totalExpenses = expenses.reduce((sum, expense) => {
 }, 0);
 totalExpensesDisplay.textContent = totalExpenses;
 }
+
+//creating insights section
+let food = 0;
+let transport = 0;
+let shopping = 0;
+let bills = 0;
+
+//loop
+expenses.forEach(expense => {
+    if (expense.name.toLowerCase() === "food") {
+        food += expense.amount;
+    }
+    else if (expense.name.toLowerCase() === "transport") {
+        transport += expense.amount;
+    }
+    else if (expense.name.toLowerCase() === "shopping") {
+        shopping += expense.amount;
+    }
+    else if (expense.name.toLowerCase() === "bills") {
+        bills += expense.amount;
+    }
+});
