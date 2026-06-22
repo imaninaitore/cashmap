@@ -7,3 +7,7 @@ const user = data.users.find(user => user.id === 1);
 
 console.log(user);
 
+function renderTotal(){
+    totalBalance.innerHTML = "";
+    let total = 0;
+}
