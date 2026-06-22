@@ -44,6 +44,3 @@ document.getElementById("savings-account").textContent =
 accountUser["savings account balance"];
 
 });
-
-
-

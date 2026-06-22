@@ -54,26 +54,22 @@
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6  bg-cyan-900 rounded p-6">
 
 
-    <!--balance card-->
+    <!-- current card-->
     <div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6">
 
          <div class="absolute top-4 right-4 bg-cyan-500 p-3 rounded-full">
          <i class="fa-solid fa-wallet text-cyan-300 text-lg"></i>
          </div>
 
-        <p class="text-cyan-300 text-sm sm:text-base">Current account: </p>
-
+<div>
+  <p class="text-cyan-300 text-lg sm:text-base">Current account: </p>
        <p class="text-cyan-100">Total: Ksh<span id="current-account" class="text-lime-300 lg:text-2xl sm:text-3xl text-3xl font-bold mt-2">
-        
        </span></p>
-
-       <div class="mt-4 text-sm text-slate-300 space-y-1">
-        <p>Available: <span class="text-lime-300"> Ksh</span></p>
-        <p>Pending: <span class="text-red-300"> Ksh</span></p>
-       </div>
+</div>
+       
     </div>
 
-    <!--spending card--> 
+    <!--transactional card--> 
     <div class="bg-white/5 backdrop-blur-md border border-cyan-500/30 rounded-2xl p-6">
 
       <div class="absolute top-4 right-4 bg-red-500/10 p-3 rounded-full">
@@ -157,9 +153,9 @@
    <h2 class="text-cyan-300">Monthly Budget Overview</h2>
        <div>
            <ul class="text-slate-300">
-        <li class=" text-sm sm:text-base lg:text-2xl" >Total Budget: <span class="text-lime-500">KSh 15,000 </span> </li>
-        <li class="text-sm sm:text-base lg:text-2xl" >Used So Far: <span class="text-red-300">KSh 9,200 </span> </li>
-        <li class="text-sm sm:text-base lg:text-2xl" >Remaining: <span class="text-lime-300"> KSh 5,800</span> </li>
+        <li class=" text-sm sm:text-base lg:text-2xl" >Total Budget: <span id="total-budget" class="text-lime-500"> </span> </li>
+        <li class="text-sm sm:text-base lg:text-2xl" >Used So Far: <span id="used-money" class="text-red-300"> </span> </li>
+        <li class="text-sm sm:text-base lg:text-2xl" >Remaining: <span id="remaining-money" class="text-lime-300"> </span> </li>
            </ul>
        </div>
 </div>
