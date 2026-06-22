@@ -216,3 +216,15 @@ const savingsGoalEditSection = document.getElementById("savings-goal-edit-sectio
 const goalInput = document.getElementById("goal-input");
 const saveGoalBtn = document.getElementById("save-goal");
 
+//get balance from json 
+let savingsBalance = accountUser["savings account balance"];
+
+//default goal
+let savingsGoal = 50000;
+
+//updating the savings section in the dashboard
+
+
+
+
+
