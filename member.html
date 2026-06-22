@@ -153,7 +153,15 @@
    <h2 class="text-cyan-300">Monthly Budget Overview</h2>
        <div>
            <ul class="text-slate-300">
-        <li class=" text-sm sm:text-base lg:text-2xl" >Total Budget: <span id="total-budget" class="text-lime-500"> </span> </li> <button id="edit-btn"></button>
+        <li class=" text-sm sm:text-base lg:text-2xl" >Total Budget: ksh <span id="total-budget" class="text-lime-500">15000</span></li> 
+
+        <button class="text-red-400" id="edit-btn">Edit budget</button>
+
+         <div id="budget-edit-section" style="display:block;">
+        <input type="number" id="budget-input" placeholder="Enter new budget">
+        <button class="text-cyan-200" id="save-budget-btn">Save</button>
+         </div>
+
         <li class="text-sm sm:text-base lg:text-2xl" >Used So Far: <span id="used-money" class="text-red-300"> </span> </li>
         <li class="text-sm sm:text-base lg:text-2xl" >Remaining: <span id="remaining-money" class="text-lime-300"> </span> </li>
            </ul>
