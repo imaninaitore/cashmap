@@ -49,7 +49,7 @@ This project requires Jest for testing
 - install jest 
 ```bash
 npm init -y
-npm install
+npm install --save-dev jest
 ```
 - open package.json and change test script to jest
 
