@@ -184,3 +184,35 @@ insightDisplay.textContent =
 //display on transactional account
 const transactionSpentDisplay = document.getElementById("spent");
 const transactionRemainingDisplay = document.getElementById("remaining");
+
+//edit savings goals
+function updateSavingsDashboard() {
+
+    // total goals target
+    const totalGoals = savingsGoals.reduce((sum, goal) => {
+        return sum + goal.target;
+    }, 0);
+
+    // overall progress based on savings pool
+    const progress = (savingsBalance / totalGoals) * 100;
+
+    // remaining to reach full goal
+    const remaining = totalGoals - savingsBalance;
+
+    // display
+    document.getElementById("total-savings").textContent = savingsBalance;
+    document.getElementById("total-goals").textContent = totalGoals;
+    document.getElementById("savings-progress").textContent = `${progress.toFixed(0)}%`;
+    document.getElementById("savings-remaining").textContent = remaining;
+}
+
+//SAVINGS ACCOUNT SECTION
+const goalDisplay = document.getElementById("savings-goal");
+const progressDisplay = document.getElementById("progress-percentage");
+const savingsRemainingDisplay = document.getElementById("savings-remaining");
+
+const editGoalBtn = document.getElementById("edit-goal");
+const savingsGoalEditSection = document.getElementById("savings-goal-edit-section");
+const goalInput = document.getElementById("goal-input");
+const saveGoalBtn = document.getElementById("save-goal");
+

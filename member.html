@@ -100,7 +100,7 @@
 </span></p>
 
      <div class="mt-4 text-sm text-slate-300 space-y-1">
-        <p>Goal: <span class="text-white"></span></p>
+        <p>Goal: <span id="savings-goal" class="text-white"></span></p>
 
           <button class="text-red-400" id="edit-goal">Edit savings goal</button>
 
@@ -110,8 +110,9 @@
          </div>
      </div>
 
-        <p id="progress-percentage" class="text-white lg:text-3xl text-2xl sm:text-3xl font-bold mt-2"></p>
-
+        <p id="progress-percentage" class="text-white lg:text-3xl text-2xl sm:text-3xl font-bold mt-2"> </p>
+        <p>remaining to goal <span id="savings-remaining"></span></p>
+        
      <!-- progress bar -->
      <div class="w-full bg-slate-700 rounded-full h-2 mt-4">
         <div class="bg-lime-400 h-2 rounded-full" style="width:72%"></div>
