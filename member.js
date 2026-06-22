@@ -139,8 +139,6 @@ let transport = 0;
 let shopping = 0;
 let bills = 0; 
 
-
-
 //loop
 expenses.forEach(expense => {
     if (expense.name.toLowerCase() === "food") {
@@ -182,3 +180,7 @@ const insightDisplay = document.getElementById("spending-insight");
 insightDisplay.textContent =
 `You spend most on ${highestCategory} : (KSh ${highestAmount})`;
 }
+
+//display on transactional account
+const transactionSpentDisplay = document.getElementById("spent");
+const transactionRemainingDisplay = document.getElementById("remaining");
